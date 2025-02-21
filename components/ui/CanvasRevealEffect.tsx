@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
@@ -47,6 +48,8 @@ export const CanvasRevealEffect = ({
     </div>
   );
 };
+
+export default CanvasRevealEffect;
 
 interface DotMatrixProps {
   colors?: number[][];

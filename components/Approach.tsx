@@ -1,8 +1,18 @@
 "use client";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
+//import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+
+import dynamic from "next/dynamic";
+
+// const CanvasRevealEffect = dynamic(() => import("./ui/CanvasRevealEffect").then((mod) => ({ default: mod.CanvasRevealEffect })), {
+//   ssr: false,
+// });
+
+const CanvasRevealEffect = dynamic(() => import("./ui/CanvasRevealEffect"), {
+  ssr: false,  // ✅ Ensure it's only loaded on the client
+});
 const Approach = () => {
   // Used Acerternity Canvas Reveal Effect
   return (
