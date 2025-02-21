@@ -19,6 +19,7 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-expressions": "off", // Disable unused expressions
       "@typescript-eslint/no-non-null-asserted-optional-chain": "off", // Disable optional chain assertion check
       "no-var": "off", // Disable the rule that prevents 'var' usage
+      "prefer-const": "off", // Disable 'prefer-const' rule
     },
   },
 ];
