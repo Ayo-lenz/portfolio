@@ -42,7 +42,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, i&apos;m Oluwasegun, a Next.js and Django Developer based in Lagos, Nigeria
           </p>
-          <a href="#about">
+          <a href="#projects">
             <MagicButton 
               title='Show my work'
               icon={<FaLocationArrow />}
